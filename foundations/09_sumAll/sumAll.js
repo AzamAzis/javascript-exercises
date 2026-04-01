@@ -9,8 +9,8 @@ const sumAll = (num1, num2) => {
 
 	if (
 		min < 0 ||
-		min !== parseInt(min) ||
-		max !== parseInt(max) ||
+		!Number.isInteger(min) ||
+		!Number.isInteger(max) ||
 		num1 === String(num1) ||
 		num2 === String(num2) ||
 		min !== Number(min) ||
